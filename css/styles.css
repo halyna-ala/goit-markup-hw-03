@@ -24,7 +24,18 @@ border: 0;
 padding: 0; 
 white-space: nowrap; 
 clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+ 
+.container,
+.contact {
+margin-left: auto;
+margin-right: auto;
+width: 1170px;
+outline: 2px solid mediumvioletred;
+}
 
+header {
+background-color: navajowhite;
+}
 /* logo */
 
 .logo-web {color: var(--akcent-color);}
@@ -32,6 +43,7 @@ clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 .logo {color: var(--logo-tekst); font-family: Raleway, sans-serif; font-size: 26px; line-height: 1.11; }
 
 /* site nav */
+
 
 .site-nav .link {color: var(--title-text-color);}
 
@@ -82,12 +94,42 @@ clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 .footer .contact {font-weight: normal; font-size: 14px; line-height: 1.71;}
 
 /* button */
-.button {color: var(--hero-100pr); background-color: var(--akcent-color); font-family: inherit; font-weight: 700; font-size: 16px; line-height: 1.87; align-items: center; text-align: center; letter-spacing: 0.06em}
+.button {
+    border-radius: 4px;
+    padding: 10px 32px;
+    border: 1px solid transparent;
 
-.btn {color: var(--title-text-color); background: var(--primery-btn-color); font-family: inherit; font-weight: 500; font-size: 16px; line-height: 1.62;}
+    color: var(--hero-100pr); 
+    background-color: var(--akcent-color); 
+    
+    font-family: inherit; 
+    font-weight: 700; 
+    font-size: 16px; 
+    line-height: 1.87; 
+    letter-spacing: 0.06em;
+    align-items: center;
+}
+
+.btn {
+    display: inline-block;
+    border-radius: 4px;
+    padding: 6px 22px;
+    border: 1px solid transparent;
+
+    color: var(--title-text-color); 
+    background: var(--primery-btn-color); 
+    
+    font-family: inherit; 
+    font-weight: 500; 
+    font-size: 16px; 
+    line-height: 1.62;
+}
 
 .btn:hover,
-.btn:focus {color: var(--hero-100pr); background: var(--akcent-color);}
+.btn:focus {
+    color: var(--hero-100pr); 
+    background: var(--akcent-color);
+}
 
 /* portfolio */
 .caption .title {color: var(--title-text-color); font-size: 18px; line-height: 2; letter-spacing: 0.06em;}
