@@ -1,0 +1,95 @@
+:root { 
+--primary-text-color: #757575; 
+--title-text-color: #212121;  
+--akcent-color:  #2196F3;
+--logo-tekst: #000000;
+--hero-100pr: #FFFFFF;
+--white-footer-60pr: #FFFFFF;
+
+--backgraund: #2F303A; 
+--primery-btn-color: #F5F4FA;}
+
+body { 
+color: var(--primary-text-color); 
+font-family: Roboto, sans-serif; 
+letter-spacing: 0.03em;}
+
+
+.visually-hidden { 
+position: absolute;
+width: 1px; 
+height: 1px; 
+margin: -1px; 
+border: 0; 
+padding: 0; 
+white-space: nowrap; 
+clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
+/* logo */
+
+.logo-web {color: var(--akcent-color);}
+
+.logo {color: var(--logo-tekst); font-family: Raleway, sans-serif; font-size: 26px; line-height: 1.11; }
+
+/* site nav */
+
+.site-nav .link {color: var(--title-text-color);}
+
+.site-nav .link:hover,
+.site-nav .link:focus {color: var(--akcent-color);}
+
+.site-nav .carent {color: var(--akcent-color);}
+
+.site-nav .contact { font-weight: 500; font-size: 14px; line-height: 1.14; letter-spacing: 0.02em;}
+
+/* adres */
+
+.contact .link {color: var(--primary-text-color);}
+
+.contact .link:hover, 
+.contact .link:focus {color: var(--akcent-color);}
+
+/* hero */
+
+.hero {background: var(--backgraund); }
+
+.hero .hero-title {color: var(--hero-100pr); font-weight: 900; font-size: 44px; line-height: 1.36; text-align: center; letter-spacing: 0.06em;}
+
+/* section */
+
+.section-title,
+.section .title,
+.section .item {color: var(--title-text-color);}
+
+.section .title {font-size: 14px; line-height: 1.4;}
+
+.section-title {font-size: 36px; line-height: 1.17; text-align: center;}
+
+.section .desc {font-weight: 400; font-size: 14px; line-height: 1.71;}
+
+.section .item {font-weight: 500; font-size: 16px; line-height: 1.9;}
+
+.section .link {font-size: 16px; line-height: 1.9;}
+
+/* footer */
+.footer {background: var(--backgraund);}
+
+.footer .logo, 
+.footer .items {color: var(--hero-100pr);}
+
+.adres .item {color: var(--white-footer-60pr);}
+
+.footer .contact {font-weight: normal; font-size: 14px; line-height: 1.71;}
+
+/* button */
+.button {color: var(--hero-100pr); background-color: var(--akcent-color); font-family: inherit; font-weight: 700; font-size: 16px; line-height: 1.87; align-items: center; text-align: center; letter-spacing: 0.06em}
+
+.btn {color: var(--title-text-color); background: var(--primery-btn-color); font-family: inherit; font-weight: 500; font-size: 16px; line-height: 1.62;}
+
+.btn:hover,
+.btn:focus {color: var(--hero-100pr); background: var(--akcent-color);}
+
+/* portfolio */
+.caption .title {color: var(--title-text-color); font-size: 18px; line-height: 2; letter-spacing: 0.06em;}
+
+.caption .list {font-weight: 400; font-size: 16px; line-height: 1.87;}
