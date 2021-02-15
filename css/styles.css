@@ -8,6 +8,8 @@
 
 --backgraund: #2F303A; 
 --primery-btn-color: #F5F4FA;
+
+--card-grid: 30px;
 }
 
 body { 
@@ -25,6 +27,7 @@ border: 0;
 padding: 0; 
 white-space: nowrap; 
 clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
 
 /* анульовання */
 .section.no-padding {
@@ -47,7 +50,9 @@ outline: 1px solid mediumvioletred;
     align-items: center;
     display: flex;
 }
-
+.nav {
+    display: flex;
+}
 /* .nav-adress */
 .nav-adress { 
     margin-left: auto;
@@ -149,9 +154,12 @@ outline: 1px solid mediumvioletred;
 /* hero */
 
 .hero {
+    padding-top: 199px;
+    margin-bottom: 281px;
     margin-top: 0px;
     margin-bottom: 0px;
     text-align: center;
+    height: 600px;
     background: var(--backgraund); 
 }
 
@@ -163,8 +171,10 @@ outline: 1px solid mediumvioletred;
     font-weight: 900; 
     font-size: 44px; 
     line-height: 1.36; 
-    text-align: center; 
-    letter-spacing: 0.06em;}
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
 
 /* section */
 .section {
@@ -252,13 +262,14 @@ section.our {
     padding-left: 0;
     margin-top: 0;
     margin-bottom: 0;
+    text-align: center;
 }
 .section-user .link {
     margin-bottom: 30px;
 }
 
 .section-user .user + .user {
-margin-right: 30px;
+margin-left: 30px;
 }
 
 /* footer */
@@ -340,33 +351,40 @@ margin-bottom: 0;
 }
 
 /* portfolio */
-.flex-container {
-    margin-left: auto;
-margin-right: auto;
-width: 1200px;
-padding-right: 15px;
-padding-left: 15px;
-outline: 1px solid mediumvioletred;
+/* container */
+.title-flex {
+    margin-right: auto;
+   margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 1200px;
+    outline: 1px solid chocolate;
 }
-
-.icons {
-    padding-left: 0;
-    margin-top: 0;
+.card .title {
+    margin-top: 20px;
     margin-bottom: 0;
+
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2px;
+    letter-spacing: 0.06em;
+}
+.card {
     display: flex;
     flex-wrap: wrap;
+    padding-left: 0;
+    margin-top: calc(-1 * var(--card-grid));
+    margin-bottom: 0;
+    margin-left: calc(-1 * var(--card-grid));
 }
-
-.icons .icons-list {
-    margin-right: 30px;
-    margin-bottom: 30px;
+.card .grid {
+    flex-basis: calc(100% / 3 - var(--card-grid));
+    margin-top: var(--card-grid);
+    margin-left: var(--card-grid);
 }
-
-.icons .icons-list:nth-child(3n) {
-    margin-right: 0;
-}
-
-.icons .icons-list:nth-last-child(-n+3) {
+.card .list {
+    margin-top: 4;
     margin-bottom: 0;
 }
  
