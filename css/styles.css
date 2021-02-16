@@ -30,6 +30,7 @@ clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
 
 /* анульовання */
+
 .section.no-padding {
     padding-top: 0;
     padding-bottom: 0;
@@ -287,11 +288,6 @@ margin-left: 30px;
 } */
 
 /* footer */
-.footer .logo {
-
-    padding-top: 60px;
-    padding-bottom: 20px;
-}
 
 .footer {
     height: 252px;
@@ -305,13 +301,20 @@ margin-left: 30px;
 .adres .item {color: var(--white-footer-60pr);}
 
 .footer .contact {
-margin-bottom: 9px;
+    padding-left: 0;
+    margin-top: 20px;
 
     font-weight: normal; 
     font-size: 14px; 
     line-height: 1.71;
 }
-
+.contact .links {
+    margin-top: 9px;
+}
+.footer .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
 /* button */
 .button {
     border-radius: 4px;
@@ -330,7 +333,7 @@ margin-bottom: 9px;
 }
 
 .title-btn {
-    text-align: center;
+    justify-content: center;
     padding-top: 93px;
     padding-bottom: 34px;
     display: flex;
@@ -338,6 +341,7 @@ padding-left: 0;
 margin-top: 0;
 margin-bottom: 0;
 }
+
 .title-btn .btn-btn + .btn-btn {
     margin-left: 8px;
 }
@@ -373,13 +377,10 @@ margin-bottom: 0;
     width: 1200px;
     outline: 1px solid chocolate;
 }
-.card-contents .list {
-    outline: 1px solid cornflowerblue;
-}
 
 .card-contents .title {
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 4px;
     width: 322px;
 
     color: var(--title-text-color);
@@ -387,7 +388,6 @@ margin-bottom: 0;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    outline: 1px solid crimson;
 }
 .card-set {
     display: flex;
