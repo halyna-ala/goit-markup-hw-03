@@ -34,6 +34,16 @@ clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
     padding-top: 0;
     padding-bottom: 0;
 }
+.card-set .list {
+    margin-top: 4;
+    margin-bottom: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
  
 .container {
 margin-left: auto;
@@ -154,25 +164,27 @@ outline: 1px solid mediumvioletred;
 /* hero */
 
 .hero {
+    text-align: center;
     padding-top: 199px;
-    margin-bottom: 281px;
+    padding-bottom: 201px;
     margin-top: 0px;
     margin-bottom: 0px;
-    text-align: center;
     height: 600px;
     background: var(--backgraund); 
 }
 
 .hero .hero-title {
+    text-align: center;
     margin-top: 0px;
+    margin-right: 0;
     margin-bottom: 40px;
+    
 
     color: var(--hero-100pr); 
     font-weight: 900; 
     font-size: 44px; 
     line-height: 1.36; 
-    text-align: center;
-    text-transform: uppercase;
+    width: 696px;
     letter-spacing: 0.06em;
 }
 
@@ -255,7 +267,9 @@ margin-left: 30px;
 section.our {
     background-color: var(--primery-btn-color);
 }
-
+.section-user .user {
+flex-basis: calc(100% /);
+}
 .section-user {
     display: flex;
     flex-wrap: wrap;
@@ -263,6 +277,9 @@ section.our {
     margin-top: 0;
     margin-bottom: 0;
     text-align: center;
+}
+.section-user{
+    outline: 1px solid crimson;
 }
 .section-user .link {
     margin-bottom: 30px;
@@ -275,13 +292,12 @@ margin-left: 30px;
 /* footer */
 .footer .logo {
 
-    margin-top: 60px;
-    margin-bottom: 20px;
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-top: 60px;
+    padding-bottom: 20px;
 }
 
 .footer {
+    height: 252px;
     justify-content: center;
     background: var(--backgraund);
 }
@@ -360,9 +376,10 @@ margin-bottom: 0;
     width: 1200px;
     outline: 1px solid chocolate;
 }
-.card .title {
-    margin-top: 20px;
+.card-set .title {
+    margin-top: 0;
     margin-bottom: 0;
+    width: 322px;
 
     color: var(--title-text-color);
     font-weight: 700;
@@ -370,7 +387,7 @@ margin-bottom: 0;
     line-height: 2px;
     letter-spacing: 0.06em;
 }
-.card {
+.card-set {
     display: flex;
     flex-wrap: wrap;
     padding-left: 0;
@@ -378,19 +395,18 @@ margin-bottom: 0;
     margin-bottom: 0;
     margin-left: calc(-1 * var(--card-grid));
 }
-.card .grid {
+.card-set .grid {
     flex-basis: calc(100% / 3 - var(--card-grid));
     margin-top: var(--card-grid);
     margin-left: var(--card-grid);
 }
-.card .list {
-    margin-top: 4;
-    margin-bottom: 0;
+
+.card-contents {
+    padding: 20px 24px;
 }
  
 .caption .title {
     margin-top: 20px;
-    margin-bottom: 4px;
 
     color: var(--title-text-color); 
     font-size: 18px; line-height: 2;
